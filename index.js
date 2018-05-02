@@ -1,5 +1,5 @@
 
-const $ = require('umbrella')
+const $ = require('dough')
 
 const createElem = $.elem
 const applyProps = $._initAttributes
@@ -51,7 +51,7 @@ Noad.prototype = {
       forEach(arguments, append, this.n)
     }
     return this
-  }
+  },
   clone() {
     return $(this.n.cloneNode(true))
   }
